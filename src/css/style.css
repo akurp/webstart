@@ -1,6 +1,5 @@
 body {
-  font-family: 'Museo Sans Cyrl';
-  font-weight: 400;
+  font-family: sans-serif;
 }
 
 img {
@@ -21,20 +20,7 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 90%;
-  }
-}
-
-@media (max-width: 567px) {
-  .container {
-    max-width: 580px;
-  }
-}
-
-@media (max-width: 321px) {
-  .container {
-    max-width: 280px;
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -48,7 +34,7 @@ img {
 }
 
 .navbar {
-  padding: 7px 0 15px 0;
+  padding: 8px 0;
 }
 
 .navbar-block {
@@ -74,8 +60,6 @@ img {
 }
 
 .navbar__address {
-  margin-top: -2px;
-  font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,9 +71,7 @@ img {
 }
 
 .navbar__button {
-  margin-top: -3px;
   margin-left: 30px;
-  font-weight: 700;
 }
 
 .navbar__phone {
@@ -98,8 +80,7 @@ img {
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
-  margin-top: 7px;
-  font-weight: 700;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -108,27 +89,10 @@ img {
   }
   .navbar__button {
     font-size: 12px;
-    padding: 13px 24px;
+    padding: 15px 26px;
   }
   .navbar__logo {
     width: 90px;
-  }
-}
-
-@media (max-width: 321px) {
-  .navbar {
-    padding: 17px 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .navbar__button {
-    border-radius: 5px;
-    font-size: 10px;
-    font-weight: 700;
-    padding: 14px 26px;
-    margin-top: -5px;
-    margin-right: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */
