@@ -1,6 +1,7 @@
 //    Здесь будут задаваться стили интерфейса    
 body
-    font-family: sans-serif
+    font-family: 'Museo Sans Cyrl'
+    font-weight: 400
 img
     max-width: 100%
 .container
@@ -13,6 +14,13 @@ img
     .container
         max-width: 580px
         width: 90%
+@media (max-width: 567px)
+    .container
+        max-width: 580px
+@media (max-width: 321px)
+    .container
+        max-width: 280px
+        width: 100%
 .button
     border-radius: 10px
     background-color: $main-color
