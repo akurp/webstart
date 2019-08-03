@@ -66,6 +66,10 @@ img {
   font-weight: 300;
 }
 
+.input:focus {
+  outline: none;
+}
+
 /* Импорт стилей шапки */
 .navbar {
   padding: 7px 0 5px 0;
