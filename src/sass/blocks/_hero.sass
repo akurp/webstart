@@ -24,9 +24,11 @@
             display: flex
             align-items: center
             margin-bottom: 25px
+            &:last-child
+                margin-bottom: 0
         &__image
-            width: 35px
-            height: 35px
+            width: 40px
+            height: 40px
             border: 2px solid $main-color
             display: flex
             align-items: center
@@ -38,8 +40,9 @@
             line-height: 24px
             font-weight: 300
             font-size: 14px
-    &-img
-        box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+    &-img img
+        margin-left: 15px
+        box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
 @media (max-width: 1200px)
     .hero
         &-block
@@ -48,6 +51,8 @@
             margin-bottom: 44px
         &-text
             padding-right: 10px
+        &-img
+            margin-left: 0
 @media (max-width: 768px)
     .hero
         &-text

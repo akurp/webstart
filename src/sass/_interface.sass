@@ -1,4 +1,6 @@
 //    Здесь будут задаваться стили интерфейса    
+*
+    box-sizing: border-box
 body
     font-family: 'Museo Sans Cyrl'
     font-weight: 400
@@ -28,3 +30,13 @@ img
     padding: 18px 30px
     font-size: 13px
     outline: none
+    &:hover
+        background: lighten($main-color, 10%)
+        cursor: pointer
+.input
+    border: 1px solid $border-input
+    padding: 20px 30px
+    font-size: 15px
+    border-radius: 10px
+    font-weight: 300
+    
