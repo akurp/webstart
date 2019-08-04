@@ -72,6 +72,7 @@ h1, h2, h3, p {
 
 .input:focus {
   outline: none;
+  border: 1px solid #ffd200;
 }
 
 /* Импорт стилей шапки */
