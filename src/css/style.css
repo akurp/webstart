@@ -13,6 +13,10 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3, p {
+  margin: 0;
+}
+
 .container {
   width: 1170px;
   margin: auto;
@@ -257,23 +261,41 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 35px 0px 50px 15px;
+  }
+  .hero-text {
+    padding-right: 0;
+  }
   .hero-text__title {
     font-size: 24px;
-    line-height: 1.4;
+    line-height: 30px;
     margin-bottom: 13px;
   }
   .hero-text__subtitle {
+    margin-top: -5px;
+    width: 265px;
     font-size: 16px;
     margin-bottom: 28px;
+  }
+  .hero-img {
+    margin-top: -5px;
+    margin-left: -20px;
+    width: 97%;
   }
   .hero-list__item {
     margin-bottom: 20px;
   }
   .hero-list__text {
+    max-width: 200px;
     font-size: 12px;
+    line-height: 14px;
   }
   .hero-list__image {
+    margin-left: -5px;
     margin-right: 15px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -335,13 +357,15 @@ img {
 }
 
 .offer__text {
+  display: block;
   font-size: 15px;
   font-weight: 300;
   line-height: 24px;
+  width: 225px;
 }
 
-.offer__text:first-child {
-  margin-right: 70px;
+.offer__text:last-child {
+  margin-right: -27px;
 }
 
 .offer__phone {
@@ -360,24 +384,61 @@ img {
 
 @media (max-width: 1200px) {
   .offer {
-    background-size: cover;
+    background: #ffffff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
   }
   .offer__input {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 49%;
   }
-  .offer__button {
-    font-size: 14px;
+  .offer__ref {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 @media (max-width: 768px) {
   .offer {
     background: #ffffff;
+    padding: 53px 0;
+  }
+  .offer__title {
+    margin-top: -5px;
+    font-size: 18px;
+    line-height: 22px;
+    width: 260px;
+    margin-bottom: 18px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 27px;
   }
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer__input {
+    width: 100%;
+    margin-right: 0;
+    padding: 23px 23px;
+    margin-bottom: 8px;
+  }
+  .offer__button {
+    font-size: 15px;
+    margin-bottom: 23px;
+  }
+  .offer__ref {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 5px;
+  }
+  .offer__text:first-child {
+    margin-bottom: 7px;
   }
 }
 /*# sourceMappingURL=style.css.map */

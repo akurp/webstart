@@ -1,7 +1,7 @@
 .offer
     background: url('../img/offer-bg.png') right no-repeat
     position: relative
-    
+    padding: 55px 0 90px
     &:before
         content: ''
         width: 50%
@@ -10,7 +10,6 @@
         background-color: #ffffff
         top: 0
         left: 0
-    padding: 55px 0 90px
     &-block
         position: relative
         width: 50%
@@ -36,11 +35,13 @@
         display: flex
         justify-content: space-between
     &__text
+        display: block
         font-size: 15px
         font-weight: 300
         line-height: 24px
-        &:first-child
-            margin-right: 70px
+        width: 225px
+        &:last-child
+            margin-right: -27px
     &__phone
         font-weight: 600
         text-decoration: none
@@ -53,15 +54,42 @@
         margin-bottom: 25px
 @media (max-width: 1200px)
     .offer
-        background-size: cover
-        &__input
-            width: 100%
-            margin-bottom: 10px
-        &__button
-            font-size: 14px
-@media (max-width: 768px)
-    .offer
         background: #ffffff
         &-block
             width: 100%
             padding-right: 0
+        &__input
+            width: 49%
+        &__ref
+            justify-content: space-around
+@media (max-width: 768px)
+    .offer
+        background: #ffffff
+        padding: 53px 0
+        &__title
+            margin-top: -5px
+            font-size: 18px
+            line-height: 22px
+            width: 260px
+            margin-bottom: 18px
+        &__subtitle
+            font-size: 14px
+            line-height: 16px
+            margin-bottom: 27px
+        &-block
+            width: 100%
+            padding-right: 0
+        &__input
+            width: 100%
+            margin-right: 0
+            padding: 23px 23px 
+            margin-bottom: 8px
+        &__button
+            font-size: 15px
+            margin-bottom: 23px
+        &__ref
+            flex-direction: column
+            margin-left: 5px
+        &__text
+            &:first-child
+                margin-bottom: 7px
