@@ -474,8 +474,10 @@ h1, h2, h3, p, ul, li {
 
 .modal-dialog__close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 3px;
+  background: transparent;
+  border: none;
 }
 
 .modal-dialog__offers {
