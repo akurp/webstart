@@ -74,7 +74,7 @@ h1, h2, h3, p, ul, li {
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
   background: #ffd200;
-  z-index: 10;
+  z-index: 1;
   outline: none;
 }
 
@@ -493,6 +493,7 @@ h1, h2, h3, p, ul, li {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 7;
 }
 
 .modal_active {
@@ -518,6 +519,7 @@ h1, h2, h3, p, ul, li {
   right: 3px;
   background: transparent;
   border: none;
+  z-index: 10;
 }
 
 .modal-dialog__offers {
@@ -664,19 +666,6 @@ h1, h2, h3, p, ul, li {
 }
 
 @media (max-width: 567px) {
-  .modal-dialog {
-    width: 90%;
-  }
-  .modal-dialog__form {
-    width: 100%;
-    padding: 20px 20px;
-  }
-  .modal-dialog__form-wrap {
-    width: 100%;
-  }
-}
-
-@media (max-width: 320px) {
   .modal-dialog {
     width: 90%;
     height: 470px;

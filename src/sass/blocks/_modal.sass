@@ -6,6 +6,8 @@
     height: 100%
     background-color: rgba(#000, 0.5)
     display: none
+    z-index: 7
+
     &_active
         display: flex
     &-dialog    
@@ -21,6 +23,7 @@
             right: 3px
             background: transparent
             border: none
+            z-index: 10
         &__offers
             display: none
             width: 600px
@@ -105,15 +108,6 @@
                 font-weight: 600
                 margin-bottom: 15px
 @media (max-width: 567px)
-    .modal
-        &-dialog
-            width: 90%
-            &__form
-                width: 100%
-                padding: 20px 20px
-                &-wrap
-                    width: 100%
-@media (max-width: 320px)
     .modal
         &-dialog
             width: 90%
