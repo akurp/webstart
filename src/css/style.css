@@ -13,7 +13,8 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul, li {
+  padding: 0;
   margin: 0;
 }
 
@@ -461,18 +462,204 @@ h1, h2, h3, p {
 }
 
 .modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   margin: auto;
-  max-width: 450px;
-  width: 90%;
-  min-width: 200px;
+  width: 570px;
+  height: 670px;
   background-color: #fff;
-  padding: 40px;
 }
 
 .modal-dialog__close {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal-dialog__offers {
+  display: none;
+  width: 600px;
+  padding: 80px 78px;
+  background-color: #f7f7f7;
+}
+
+.modal-dialog__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 100px;
+}
+
+.modal-dialog__form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-dialog-note__phone {
+  display: block;
+}
+
+.modal-dialog-form__title {
+  font-size: 22px;
+  text-align: center;
+  line-height: 33px;
+  margin-bottom: 20px;
+}
+
+.modal-dialog-form__subtitle {
+  font-size: 16px;
+  text-align: center;
+}
+
+.modal-dialog-form__input {
+  width: 100%;
+  height: 62px;
+}
+
+.modal-dialog-form__input:first-child {
+  margin-bottom: 15px;
+}
+
+.modal-dialog-form__input-container {
+  margin-top: 30px;
+}
+
+.modal-dialog-form__button {
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  height: 70px;
+}
+
+.modal-dialog-form__note {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  width: 290px;
+}
+
+.modal-dialog-form__note_phone {
+  margin-top: 12px;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.modal-offer__goods {
+  display: block;
+  margin-bottom: 55px;
+}
+
+.modal-offer-good {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-offer__list li:before {
+  content: '#';
+}
+
+.modal-offer__list li:before__description {
+  margin-left: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-offer__list li:before__line {
+  border: 1px solid #ffd200;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.modal-offer__list li:before__img {
+  width: 120px;
+  height: 85px;
+}
+
+.modal-offer__list li:before__title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.modal-offer__list li:before__price {
+  font-weight: 16px;
+  line-height: 22px;
+}
+
+.modal-offer__list li:before__price_counts {
+  font-weight: 600;
+}
+
+.modal-offer-description__text {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 567px) {
+  .modal-dialog {
+    width: 90%;
+  }
+  .modal-dialog__form {
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal-dialog {
+    width: 90%;
+  }
+  .modal-dialog__form {
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .modal-dialog__form-wrap {
+    width: 100%;
+  }
+  .modal-dialog-form__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: -30px;
+  }
+  .modal-dialog-form__subtitle {
+    margin-bottom: -45px;
+  }
+  .modal-dialog-form__button {
+    font-size: 12px;
+    height: 60px;
+    margin-top: -20px;
+  }
+  .modal-dialog-form__note {
+    font-size: 12px;
+    margin-top: -30px;
+  }
+  .modal-dialog-form__note_phone {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

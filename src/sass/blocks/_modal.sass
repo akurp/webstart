@@ -9,14 +9,127 @@
     &_active
         display: flex
     &-dialog    
+        display: flex
         position: relative
         margin: auto
-        max-width: 450px
-        width: 90%
-        min-width: 200px
+        width: 570px
+        height: 670px
         background-color: #fff
-        padding: 40px
         &__close
             position: absolute
             top: 0
             right: 0
+        &__offers
+            display: none
+            width: 600px
+            padding: 80px 78px
+            background-color: #f7f7f7
+        &__form
+            display: flex
+            padding: 50px 100px
+            &-wrap
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                align-items: center
+        &-note__phone
+            display: block
+        &-form
+            &__title
+                font-size: 22px
+                text-align: center
+                line-height: 33px
+                margin-bottom: 20px
+            &__subtitle
+                font-size: 16px
+                text-align: center
+            &__input
+                width: 100%
+                height: 62px
+                &:first-child
+                    margin-bottom: 15px
+                &-container
+                    margin-top: 30px
+            &__button
+                width: 100%
+                font-weight: 600
+                font-size: 16px
+                height: 70px
+            &__note
+                font-size: 15px
+                line-height: 20px
+                text-align: center
+                width: 290px
+                &_phone
+                    margin-top: 12px
+                    display: block
+                    font-size: 24px
+                    font-weight: 600
+                    text-decoration: none
+                    color: #000
+    &-offer
+        &__goods
+            display: block
+            margin-bottom: 55px
+        &-good
+            display: flex
+            margin-bottom: 15px
+            align-items: center
+        &__list li:before
+            content: '#'
+            &__description
+                margin-left: 27px
+                display: flex
+                flex-direction: column
+            &__line
+                border: 1px solid $main-color
+                width: 40px
+                margin-bottom: 10px
+            &__img
+                width: 120px
+                height: 85px
+            &__title
+                font-size: 16px
+                margin-bottom: 10px
+            &__price
+                font-weight: 16px
+                line-height: 22px
+                &_counts
+                    font-weight: 600
+        &-description
+            &__text
+                display: block
+                font-size: 14px
+                font-weight: 600
+                margin-bottom: 15px
+@media (max-width: 567px)
+    .modal
+        &-dialog
+            width: 90%
+            &__form
+                padding: 50px 50px
+@media (max-width: 320px)
+    .modal
+        &-dialog
+            width: 90%
+            &__form
+                width: 100%
+                padding: 20px 20px
+                &-wrap
+                    width: 100%
+            &-form
+                &__title
+                    font-size: 18px
+                    line-height: 22px
+                    margin-bottom: -30px
+                &__subtitle
+                    margin-bottom: -45px
+                &__button
+                    font-size: 12px
+                    height: 60px
+                    margin-top: -20px
+                &__note
+                    font-size: 12px
+                    margin-top: -30px
+                    &_phone
+                        font-size: 18px
