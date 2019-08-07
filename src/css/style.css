@@ -63,6 +63,46 @@ h1, h2, h3, p, ul, li {
   cursor: pointer;
 }
 
+.button-top {
+  position: fixed;
+  bottom: -50px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+  background: #ffd200;
+  z-index: 10;
+  outline: none;
+}
+
+.button-top:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.button-top_active {
+  bottom: 50px;
+}
+
+.button-top_active:hover {
+  background: #ffdb33;
+  cursor: pointer;
+}
+
 .input {
   border: 1px solid #dddddd;
   padding: 20px 30px;

@@ -37,6 +37,37 @@ h1, h2, h3, p, ul, li
     &:hover
         background: lighten($main-color, 10%)
         cursor: pointer
+    &-top
+        position: fixed
+        bottom: -50px
+        right: 100px
+        width: 50px
+        height: 50px
+        border: none
+        border-radius: 50%
+        box-shadow: 0 5px 5px rgba(0,0,0,0.1), 0 5px 5px rgba(0,0,0,0.1)
+        background: $main-color
+        z-index: 10
+        outline: none
+        &:after
+            content: ''
+            width: 10px
+            height: 10px
+            border-top: 2px solid #ffffff
+            border-left: 2px solid #ffffff
+            transform: rotate(45deg)
+            position: absolute
+            top: 4px
+            bottom: 0
+            left: 0
+            right: 0
+            margin: auto
+        &_active
+            bottom: 50px
+            &:hover
+                background: lighten($main-color, 10%)
+                cursor: pointer
+                
 .input
     border: 1px solid $border-input
     padding: 20px 30px
