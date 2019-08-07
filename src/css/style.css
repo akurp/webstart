@@ -635,6 +635,8 @@ h1, h2, h3, p, ul, li {
 @media (max-width: 320px) {
   .modal-dialog {
     width: 90%;
+    height: 470px;
+    overflow: scroll;
   }
   .modal-dialog__form {
     width: 100%;
@@ -646,10 +648,11 @@ h1, h2, h3, p, ul, li {
   .modal-dialog-form__title {
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: -30px;
+    margin-bottom: -10px;
   }
   .modal-dialog-form__subtitle {
     margin-bottom: -45px;
+    font-size: 12px;
   }
   .modal-dialog-form__button {
     font-size: 12px;
@@ -658,7 +661,7 @@ h1, h2, h3, p, ul, li {
   }
   .modal-dialog-form__note {
     font-size: 12px;
-    margin-top: -30px;
+    margin-top: -20px;
   }
   .modal-dialog-form__note_phone {
     font-size: 18px;
