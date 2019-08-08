@@ -23,9 +23,12 @@ $(document).ready(function(){
     $('#offer-form').on('submit', function(event){
         event.preventDefault();
         $.ajax({
-            url: '../mail.php',
+            url: 'mail.php',
             type: 'POST',
-            data: $(this).serialize()
+            data: $(this).serialize(),
+            success: function(data){
+                $('.success').text('Спасибо за заявку, скоро мы вам перезвоним.')
+            }
         });
     });
 });

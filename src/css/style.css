@@ -103,6 +103,12 @@ h1, h2, h3, p, ul, li {
   cursor: pointer;
 }
 
+.success {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 .input {
   border: 1px solid #dddddd;
   padding: 20px 30px;
