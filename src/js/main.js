@@ -28,7 +28,9 @@ $(document).ready(function(){
             data: $(this).serialize(),
             success: function(data){
                 $('.success').text('Спасибо за заявку, скоро мы вам перезвоним.')
-            }
+                $('.input').val('');
+            },
+            
         });
     });
 });
