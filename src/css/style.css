@@ -2,6 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -122,6 +123,10 @@ h1, h2, h3, p, ul, li {
   border: 1px solid #ffd200;
 }
 
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
+}
+
 /* Импорт стилей шапки */
 .navbar {
   padding: 7px 0 5px 0;
@@ -224,6 +229,7 @@ h1, h2, h3, p, ul, li {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-right: 20px;
+  padding-top: 30px;
 }
 
 .hero-text__title {
@@ -351,7 +357,7 @@ h1, h2, h3, p, ul, li {
 .offer {
   background: url("../img/offer-bg.png") right no-repeat;
   position: relative;
-  padding: 55px 0 90px;
+  padding: 75px 0 90px;
 }
 
 .offer:before {
@@ -427,7 +433,7 @@ h1, h2, h3, p, ul, li {
   min-height: 70px;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 1200px) {
@@ -488,6 +494,49 @@ h1, h2, h3, p, ul, li {
   .offer__text:first-child {
     margin-bottom: 7px;
   }
+}
+
+/* Импорт блока портфолио */
+.portfolio {
+  padding: 87px 0 100px;
+  background: #f5f5f5 url("../img/portfolio-bg.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  margin: auto;
+  margin-bottom: 95px;
+  text-align: center;
+}
+
+.portfolio__slider {
+  margin-bottom: 68px !important;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider {
+  margin: 0 -15px;
+}
+
+.slider-item {
+  padding: 0 15px;
+}
+
+.slider-item__img {
+  margin: auto;
 }
 
 /* Импорт стилей модального окна */

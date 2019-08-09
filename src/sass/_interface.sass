@@ -1,6 +1,7 @@
 //    Здесь будут задаваться стили интерфейса    
 *
     box-sizing: border-box
+    outline: none
 body
     font-family: 'Museo Sans Cyrl'
     font-weight: 400
@@ -81,3 +82,7 @@ h1, h2, h3, p, ul, li
     &:focus
         outline: none
         border: 1px solid $main-color
+.arrows
+    &__left, &__right
+        &:hover
+            cursor: pointer
