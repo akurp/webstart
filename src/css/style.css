@@ -14,7 +14,7 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, p, ul, li {
+h1, h2, h3, h4, p, ul, li {
   padding: 0;
   margin: 0;
 }
@@ -502,7 +502,7 @@ h1, h2, h3, p, ul, li {
   }
 }
 
-/* Импорт блока портфолио */
+/* Импорт стилей блока портфолио */
 .portfolio {
   padding: 87px 0 100px;
   background: #f5f5f5 url("../img/portfolio-bg.jpg") repeat-y center left;
@@ -510,7 +510,7 @@ h1, h2, h3, p, ul, li {
 }
 
 .portfolio__title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 45px;
   margin: auto;
@@ -559,6 +559,323 @@ h1, h2, h3, p, ul, li {
   }
   .slider-item__img {
     width: 245px;
+  }
+}
+
+/* Импорт стилей блока с ценами */
+.price {
+  padding: 85px 0 84px;
+}
+
+.price__title {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 515px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  line-height: 45px;
+}
+
+.price__subtitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 59px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.price__card {
+  margin-bottom: 30px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .card__img::before {
+  opacity: 1;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card__img {
+  position: relative;
+}
+
+.card__img::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__text {
+  padding-top: 33px;
+  padding-bottom: 43px;
+}
+
+.card__title {
+  margin-bottom: 28px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.card__link {
+  display: inline-block;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.card__link:hover:after {
+  height: 13px;
+}
+
+.card__link::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .price {
+    padding-top: 44px;
+    padding-bottom: 25px;
+  }
+  .price__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 22px;
+  }
+  .price__subtitle {
+    font-size: 14px;
+    margin-bottom: 62px;
+  }
+  .card {
+    max-width: 270px;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card__text {
+    padding-top: 28px;
+    padding-bottom: 30px;
+  }
+  .card__title {
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+}
+
+/* Импорт стилей блока с шагами */
+.step {
+  width: 160px;
+  text-align: center;
+  position: relative;
+}
+
+.step::after {
+  content: '';
+  width: 72px;
+  height: 25px;
+  position: absolute;
+  background: url("../img/steps/arrow.png") no-repeat center;
+  top: -10px;
+  right: -45%;
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+.step__img {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.step__text {
+  font-size: 14px;
+  max-width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 20px;
+}
+
+.steps {
+  padding-top: 43px;
+  padding-bottom: 96px;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.steps-title {
+  font-size: 30px;
+  line-height: 45px;
+  max-width: 660px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 49px;
+}
+
+.steps-subtitle {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 68px;
+  font-weight: 100;
+}
+
+@media (max-width: 768px) {
+  .step {
+    margin-bottom: 30px;
+  }
+  .step::after {
+    display: none;
+  }
+  .step__img {
+    margin-bottom: 20px;
+  }
+  .step__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .steps {
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .steps-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+  .steps-subtitle {
+    font-size: 14px;
+    margin-bottom: 33px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .step {
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .step::after {
+    display: none;
+  }
+  .steps-block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* Импорт стилей блока с гарантией */
+.warranty {
+  padding-top: 86px;
+  padding-bottom: 95px;
+  text-align: center;
+  background-color: #ffc000;
+}
+
+.warranty__text {
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .warranty {
+    padding-top: 68px;
+    padding-bottom: 75px;
+  }
+  .warranty-block {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .warranty__text {
+    width: 85%;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 

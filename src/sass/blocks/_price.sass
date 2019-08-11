@@ -1,0 +1,97 @@
+.price
+    padding: 85px 0 84px
+    &__title
+        margin-left: auto
+        margin-right: auto
+        display: block
+        max-width: 515px
+        text-align: center
+        font-size: 30px
+        margin-bottom: 50px
+        line-height: 45px
+    &__subtitle
+        display: block
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+        margin-bottom: 59px
+        font-size: 20px
+        font-weight: 100
+    &__card
+        margin-bottom: 30px
+.card
+    text-align: center
+    border: 1px solid $border-card
+    transition: 0.2s
+    &:hover
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+        .card__img::before
+            opacity: 1
+    &s
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__img
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+            opacity: 0
+            transition: 0.2s
+    &__text
+        padding-top: 33px
+        padding-bottom: 43px
+    &__title
+        margin-bottom: 28px
+        font-weight: 300
+        font-size: 18px
+    &__link
+        display: inline-block
+        font-weight: 600
+        color: #000
+        text-decoration: none
+        font-size: 16px
+        position: relative
+        &:hover
+            &:after
+                height: 13px
+        &::after
+            display: block
+            // margin-top: 4px
+            content: ''
+            width: 100%
+            height: 3px
+            background-color: $main-color
+            position: absolute
+            bottom: -6px
+            left: 0
+            z-index: -1
+            transition: 0.2s
+            
+@media (max-width: 768px)
+    .price
+        padding-top: 44px
+        padding-bottom: 25px
+        &__title
+            font-size: 18px
+            line-height: 22px
+            margin-bottom: 22px
+        &__subtitle
+            font-size: 14px
+            margin-bottom: 62px
+    .card
+        max-width: 270px
+        &s
+            flex-direction: column
+            align-items: center
+        &__text
+            padding-top: 28px
+            padding-bottom: 30px
+        &__title
+            font-size: 14px
+            margin-bottom: 13px
