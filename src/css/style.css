@@ -14,7 +14,7 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, p, ul, li {
+h1, h2, h3, h4, p, ul, li, hr {
   padding: 0;
   margin: 0;
 }
@@ -1035,6 +1035,9 @@ h1, h2, h3, h4, p, ul, li {
 
 @media (max-width: 768px) {
   .brif {
+    height: 1010px;
+    padding-top: 50px;
+    padding-bottom: 0;
     background-position: center top, center bottom;
     background-repeat: repeat-x, no-repeat;
     background-size: 100% 50%, cover;
@@ -1046,7 +1049,181 @@ h1, h2, h3, h4, p, ul, li {
             flex-direction: column;
   }
   .brif__form {
-    margin-top: 80px;
+    margin-top: 116px;
+  }
+  .brif__button {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .brif__input {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .interview {
+    padding-right: 0px;
+  }
+  .interview__title {
+    margin-top: -5px;
+    max-width: 230px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .interview__subtitle {
+    font-size: 14px;
+    max-width: 190px;
+    margin-bottom: 39px;
+  }
+  .interview-list__text {
+    max-width: 235px;
+  }
+  .interview-list__text_third {
+    max-width: 200px;
+  }
+  .interview-list__item:last-child {
+    margin-bottom: 0;
+  }
+  .interview-list__counter {
+    margin-right: 10px;
+  }
+  .form__title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .form__subtitle {
+    font-size: 14px;
+  }
+  .form__description {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    max-width: 140px;
+    line-height: 20px;
+  }
+}
+
+/* Импорт стилей подвала */
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 210px;
+  padding-bottom: 128px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+}
+
+.contacts-list {
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 25px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+  line-height: 22px;
+}
+
+.contacts-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts-list__text-add {
+  font-weight: 600;
+  display: block;
+  max-width: 160px;
+}
+
+.contacts-list__tel {
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .map {
+    position: relative;
+    width: 100%;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 68px;
+    padding-bottom: 65px;
+    padding-left: 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .contacts__title {
+    font-size: 18px;
+    margin-bottom: 36px;
+    max-width: 250px;
+    line-height: 21px;
+  }
+  .contacts-list__item {
+    margin-bottom: 33px;
+  }
+  .contacts-list__icon {
+    margin-right: 13px;
+  }
+  .contacts-list__text {
+    line-height: 22px;
+  }
+  .contacts-list__text-add {
+    line-height: 22px;
   }
 }
 

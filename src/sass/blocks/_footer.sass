@@ -1,0 +1,76 @@
+.footer
+    position: relative
+.map
+    position: absolute
+    top: 0
+    left: 0
+    width: 50%
+.contacts
+    flex-basis: 50%
+    padding-top: 100px
+    padding-left: 210px
+    padding-bottom: 128px
+    &-block
+        display: flex
+        justify-content: flex-end
+    &__title
+        font-weight: 600
+        font-size: 22px
+        line-height: 1.4
+        margin-bottom: 100px
+    &-list
+        list-style: none
+        &__icon
+            width: 20px
+            height: 20px
+            text-align: center
+            line-height: 20px
+            margin-right: 25px
+        &__item
+            display: flex
+            align-items: flex-start
+            margin-bottom: 39px
+            line-height: 22px
+            &:last-child
+                margin-bottom: 0
+        &__text
+            &-add
+                font-weight: 600
+                display: block
+                max-width: 160px
+        &__tel
+            font-weight: 600
+            color: #000000
+            text-decoration: none
+            
+@media (max-width: 1200px)
+    .contacts
+        padding-left: 40px
+@media (max-width: 768px)
+    .footer
+        display: flex
+        flex-direction: column-reverse
+    .map
+        position: relative
+        width: 100%
+        
+    .contacts
+        flex-basis: 100%
+        padding-top: 68px
+        padding-bottom: 65px
+        padding-left: 0
+        order: 0
+        &__title
+            font-size: 18px
+            margin-bottom: 36px
+            max-width: 250px
+            line-height: 21px
+        &-list
+            &__item
+                margin-bottom: 33px
+            &__icon
+                margin-right: 13px
+            &__text
+                line-height: 22px
+                &-add
+                    line-height: 22px

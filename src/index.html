@@ -341,7 +341,7 @@
                                 <!-- /.interview-list__item -->
                                 <li class="interview-list__item">
                                     <span class="interview-list__counter">3.</span>
-                                    <span class="interview-list__text">Где находится помещение, в котором будет производиться ремонт?</span>
+                                    <span class="interview-list__text interview-list__text_third">Где находится помещение, в котором будет производиться ремонт?</span>
                                 </li>
                                 <!-- /.interview-list__item -->
                                 <li class="interview-list__item">
@@ -360,7 +360,6 @@
                                     <form action="#">
                                         <input type="text" name="username" class="input brif__input" placeholder="Ваше имя" >
                                         <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон" >
-                                        <input type="email" name="email" class="input brif__input" placeholder="Ваш Email" >
                                         <button class="button brif__button">Рассчитать стоимость</button>
                                         <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
                                     </form>
@@ -374,6 +373,48 @@
             </section>
             <!-- /.section brif -->
         </main>
+        <footer class="footer">
+            <div class="map" id="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d052e4fe53bb0f99b62cae414da0302dd15ce0cddde7bb24d56b498ab65cc7b&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+            <!-- /.map -->
+            <div class="container">
+                <div class="contacts-block">
+                    <div class="contacts">
+                        <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас <br> по всем вопросам ремонта</h3>
+                        <!-- /.contacts__title -->
+                        <ul class="contacts-list">
+                            <li class="contacts-list__item">
+                                <span class="contacts-list__icon">
+                                    <img src="img/footer/map-placeholder.png" alt="map">
+                                </span> <!-- /.contacts-list__icon -->
+                                <span class="contacts-list__text">г. Москва <br> <span class="contacts-list__text-add">ул. Ленинга, д. 10, корпус 2, оф. 308</span></span> <!-- /.contacts-list__text -->
+                            </li>
+                            <!-- /.contacts-list__item -->
+                            <li class="contacts-list__item">
+                                <span class="contacts-list__icon">
+                                    <img src="img/footer/clock.png" alt="clock">
+                                </span> <!-- /.contacts-list__icon -->
+                                <span class="contacts-list__text">Режим работы: <br> <span class="contacts-list__text-add">с 9:00 до 18:00</span></span> <!-- /.contacts-list__text -->
+                            </li>
+                            <!-- /.contacts-list__item -->
+                            <li class="contacts-list__item">
+                                <span class="contacts-list__icon">
+                                    <img src="img/footer/phone-call-button.png" alt="phone">
+                                </span> <!-- /.contacts-list__icon -->
+                                <span class="contacts-list__text">Телефон: <br> <a href="tel:+74954225131" class="contacts-list__tel">+7 (495) 42-251-31</a></span> <!-- /.contacts-list__text -->
+                            </li>
+                            <!-- /.contacts-list__item -->
+                        </ul>
+                        <!-- /.contacts-list -->
+                    </div>
+                    <!-- /.contacts -->
+                </div>
+                <!-- /.contacts-block -->
+            </div>
+            <!-- /.container -->
+        </footer>
+        <!-- /.footer section -->
         <div class="modal" id="modal">
             <div class="modal-dialog">
                 <button class="modal-dialog__close" id="close">&times;</button>
