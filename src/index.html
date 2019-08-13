@@ -4,12 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://yastatic.net/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fonts.css">
         <title>Document</title>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54893842, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54893842" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
     </head>
     <body>
         <nav class="navbar">
@@ -25,7 +29,7 @@
                             <a href="+74954225131" class="navbar__phone">+7 (495) 42-251-31</a>
                         </div>
                         <!-- /.navbar__contacts -->
-                        <button class="button navbar__button" id="button">Перезвоните мне</button>
+                        <button class="button navbar__button" id="button" onclick="ym(54893842, 'reachGoal', 'button'); return true;">Перезвоните мне</button>
                         <!-- /.button navbar__button -->
                     </div>
                     <!-- /.navbar__info -->
@@ -83,7 +87,7 @@
                         <!-- /.section-title -->
                         <span class="offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
                         <!-- /.section-subtitle -->
-                        <form action="" id="offer-form" class="form offer__form">
+                        <form action="" id="offer-form" class="form offer__form" onsubmit="ym(54893842, 'reachGoal', 'send-numb'); return true;">
                             <input
                                 type="text"
                                 name="username"
@@ -375,7 +379,7 @@
         </main>
         <footer class="footer">
             <div class="map" id="map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d052e4fe53bb0f99b62cae414da0302dd15ce0cddde7bb24d56b498ab65cc7b&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+                <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d052e4fe53bb0f99b62cae414da0302dd15ce0cddde7bb24d56b498ab65cc7b&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script> -->
             </div>
             <!-- /.map -->
             <div class="container">
@@ -402,7 +406,7 @@
                                 <span class="contacts-list__icon">
                                     <img src="img/footer/phone-call-button.png" alt="phone">
                                 </span> <!-- /.contacts-list__icon -->
-                                <span class="contacts-list__text">Телефон: <br> <a href="tel:+74954225131" class="contacts-list__tel">+7 (495) 42-251-31</a></span> <!-- /.contacts-list__text -->
+                                <span class="contacts-list__text-tel">Телефон: <br> <a href="tel:+74954225131" class="contacts-list__tel">+7 (495) 42-251-31</a></span> <!-- /.contacts-list__text -->
                             </li>
                             <!-- /.contacts-list__item -->
                         </ul>
@@ -533,6 +537,8 @@
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=716f0a08-f471-47c0-b112-825fa9e9b2d3"></script>
+        <script src="js/balloon_and_hint.js"></script>
         <script>
             new WOW().init();
             $(document).ready(function () {
