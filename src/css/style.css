@@ -879,6 +879,55 @@ h1, h2, h3, h4, p, ul, li, hr {
   }
 }
 
+/* Импорт стилей блока с материалами */
+.materials {
+  padding-top: 100px;
+  padding-bottom: 84px;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.materials-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.materials-block {
+  width: 370px;
+  background: #f7f7f7;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.materials-block:last-child {
+  margin-right: 0px;
+}
+
+.materials-block:first-child {
+  margin-left: 0px;
+}
+
+.materials__text {
+  padding-top: 30px;
+  padding-right: 54px;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.materials__text_bold {
+  font-weight: 600;
+}
+
+.materials__text:first-child {
+  padding-bottom: 10px;
+}
+
 /* Импорт стилей блока с брифом и формой */
 .brif {
   padding-top: 98px;
