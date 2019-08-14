@@ -8,6 +8,9 @@ $(document).ready(function(){
     close.on('click', function(){
         modal.removeClass('modal_active');
     });
+
+    
+
     // Подключим кнопку-якорь наверх
     $('body').append('<button class="button-top">');
     $('.button-top').on('click', function(){

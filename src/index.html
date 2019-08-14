@@ -524,6 +524,7 @@
                     <!-- /.modal-offer-description -->
                 </div>
                 <!-- /.modal-dialog__offers -->
+                
                 <div class="modal-dialog__form">
                     <div class="modal-dialog__form-wrap">
                         <h2 class="modal-dialog-form__title">Узнайте точную стоимость ремонта по телефону!</h2>
@@ -549,12 +550,25 @@
 
                 </div>
                 <!-- /.modal-dialog__form -->
-
             </div>
             <!-- /.modal-dialog -->
         </div>
         <!-- /.modal -->
-
+        <div class="thx-window" id="#thx">
+            <div class="thx-window-container">
+                <button class="thx-window__close" id="#close_thx"></button>
+                <!-- /.thx-window__close -->
+                <div class="thx-window__area">
+                    <h2 class="window-area__title">Спасибо за заявку!</h2>
+                    <!-- /.window-area__title -->
+                    <span class="window-area__subtitle">Скоро мы вам перезвоним.</span>
+                    <!-- /.window-area__subtitle -->
+                </div>
+                <!-- /.thx-window__area -->
+            </div>
+            <!-- /.thx-window-container -->
+        </div>
+        <!-- /.thx-window -->
         <!-- <script src="js/main.js"></script> -->
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -590,10 +604,6 @@
                             required: "Укажите имя",
                             minlength: jQuery.validator.format("Минимальное количество символов: {0}"),
                         },
-                        email:{
-                            required: "Нам нужен ваш email",
-                            email: "Введите корректный email"
-                        } ,
                         phone: "Укажите телефон"
                     }
                 });
