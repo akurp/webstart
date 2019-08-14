@@ -91,13 +91,13 @@
                             <input
                                 type="text"
                                 name="username"
-                                class="input offer__input"
+                                class="input offer__input username"
                                 placeholder="Ваше имя"
                                 required="required">
                             <input
                                 type="tel"
                                 name="userphone"
-                                class="input offer__input"
+                                class="input phone offer__input userphone"
                                 placeholder="Ваш телефон"
                                 required="required">
                             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
@@ -554,21 +554,16 @@
             <!-- /.modal-dialog -->
         </div>
         <!-- /.modal -->
-        <div class="thx-window" id="#thx">
-            <div class="thx-window-container">
-                <button class="thx-window__close" id="#close_thx"></button>
-                <!-- /.thx-window__close -->
-                <div class="thx-window__area">
-                    <h2 class="window-area__title">Спасибо за заявку!</h2>
-                    <!-- /.window-area__title -->
-                    <span class="window-area__subtitle">Скоро мы вам перезвоним.</span>
-                    <!-- /.window-area__subtitle -->
-                </div>
-                <!-- /.thx-window__area -->
+        <div class="modal-thank" id="thank">
+            <div class="modal-thank__dialog">
+                <button class="modal-dialog__close" id="close-thank" onclick="ym(54893842, 'reachGoal', 'send-numb'); return true;">&times;</button>
+                <!-- /#close-thank.modal-dialog__close -->
+                <h4 class="modal-dialog__title">Спасибо за заявку! Скоро мы вам перезвоним.</h4>
+                <!-- /.modal-dialog__title -->
             </div>
-            <!-- /.thx-window-container -->
+            <!-- /.modal-thank__dialog -->
         </div>
-        <!-- /.thx-window -->
+        <!-- /#thank.modal-thank -->
         <!-- <script src="js/main.js"></script> -->
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"

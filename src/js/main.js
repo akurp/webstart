@@ -20,31 +20,34 @@ $(document).ready(function(){
 
     });
     // обработка и отправка формы через ajax
-    var thx = $('#thx');
-    var close_thx = $('#close-thx');
+    var thank = $('#thank');
+    var close_thank = $('#close-thank');
 
     $('#offer-form').on('submit', function(event){
         event.preventDefault();
-        var username = $('username').val();
-        var userphone = $('phone').val();
-        if(username == '' || phone == '')
+        var username = $('.username').val();
+        var userphone = $('userphone').val();
+        if (username == '' || userphone == '')
         {
             valid = false;
-            return valid
-        }
+            return valid;
+        };
         $.ajax({
             url: 'mail.php',
             type: 'POST',
             data: $(this).serialize(),
-            success: function(data){
-                // $('.success').text('Спасибо за заявку, скоро мы вам перезвоним.')
-                // $('.input').val('');
-                if(valid == true)
+            success: function(valid)
+            {
+                if (valid == true)
                 {
-                    thx.addClass('thx-window_active');
-                    $('#offer-form').trigger("reset");
+                    thank.addClass('modal-thank_active');
+                    $('#offer-form').trigger('reset');
                 }
             }
-        });
+        })
+    });
+    close_thank.on('click', function(){
+        thank.removeClass('modal-thank_active');
+        $('.success').hide();
     });
 });
