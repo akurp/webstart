@@ -1,28 +1,58 @@
 .materials
     padding-top: 100px
-    padding-bottom: 84px
-    width: 1170px
-    margin-left: auto
-    margin-right: auto
+    padding-bottom: 72px
+    &-container
+        padding-left: 0
+        padding-right: 0
     &-wrap
         display: flex
         justify-content: space-between
     &-block
-        width: 370px
-        background: $materials-color
-        margin-left: 15px
-        margin-right: 15px
-        &:last-child
-            margin-right: 0px
-        &:first-child
-            margin-left: 0px
+        max-width: 370px
+        background-color: $materials-color
     &__text
-        padding-top: 30px
-        padding-right: 54px
+        padding-top: 20px
         padding-left: 25px
+        padding-bottom: 50px
         font-size: 16px
+        font-weight: 300
         line-height: 23px
+        &-first
+            padding-right: 80px
+        &-second
+            padding-right: 46px
+        &-third
+            padding-right: 59 materials__text-firstpx
         &_bold
-            font-weight: 600
-        &:first-child
-            padding-bottom: 10px
+            font-weight: 700
+    &__img
+        max-width: 100%
+@media (max-width: 1200px)
+    .materials
+        &-wrap
+            flex-wrap: wrap
+        &-block
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 20px
+@media (max-width: 768px)
+    .materials
+        padding-top: 59px
+        &-block
+            width: 270px
+            margin-bottom: 33px
+        &__text
+            font-size: 12px
+            padding-top: 13px
+            padding-left: 17px
+            padding-bottom: 42px
+            line-height: 18px
+            &-first
+                padding-right: 39px
+            &-second
+                padding-right: 22px
+                padding-bottom: 43px
+@media (max-width: 567px)
+    .materials
+        &__text
+            padding-bottom: 35px
