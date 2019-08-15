@@ -1,12 +1,26 @@
 //  Этот файл объединит остальные в 1 css файл style.css
+/* Подключение нормализатора */
+@import 'normalize'
+/* Подключение шрифтов */
+@import 'fonts'
+/* Подключение цветов */
 @import 'colors'
+/* Подключение базовых параметров интерфейса */
 @import 'interface'
+/* Подключение анимаций */
+@import 'animate/base'
+@import 'animate/fading_entrances/_fadeInUp'
+@import 'animate/fading_entrances/_fadeInDown'
+@import 'animate/fading_entrances/_fadeInDownBig'
+@import 'animate/sliding_entrances/_slideInRight'
 /* Импорт стилей шапки */
 @import 'blocks/navbar'
 /* Импорт стилей главного экрана */
 @import 'blocks/hero'
 /* Импорт стилей блока с предложением */
 @import 'blocks/offer'
+/* Импорт слайдера */
+@import 'slick'
 /* Импорт стилей блока портфолио */
 @import 'blocks/portfolio'
 /* Импорт стилей блока с ценами */
