@@ -10,15 +10,15 @@
     flex-basis: 50%
     padding-top: 93px
     padding-left: 215px
-    padding-bottom: 128px
+    padding-bottom: 126px
     &-block
         display: flex
         justify-content: flex-end
     &__title
-        font-weight: 600
+        font-weight: 700
         font-size: 22px
-        line-height: 1.4
-        margin-bottom: 100px
+        line-height: 33px
+        margin-bottom: 93px
     &-list
         list-style: none
         margin-left: -4px
@@ -28,23 +28,35 @@
             text-align: center
             line-height: 20px
             margin-right: 25px
+            &-clock
+                margin-top: 5px
         &__item
             display: flex
             align-items: flex-start
-            margin-bottom: 39px
-            line-height: 23px
+            margin-bottom: 33px
+            line-height: 25px
+            margin-top: -2px
             &:last-child
                 margin-bottom: 0
+            &:nth-child(2)
+                margin-bottom: 38px
         &__text
             margin-top: -2px
+            &-address
+                margin-top: -4px
+                margin-left: -4px
             &-add
-                font-weight: 600
+                font-weight: 700
                 display: block
                 max-width: 160px
+            &-time
+                margin-left: -2px
             &-tel
                 margin-top: -6px
+                margin-left: -1px
+            
         &__tel
-            font-weight: 600
+            font-weight: 700
             color: #000000
             text-decoration: none
             
@@ -63,17 +75,22 @@
         flex-basis: 100%
         padding-top: 63px
         padding-bottom: 65px
-        padding-left: 3px
+        padding-left: 0px
         order: 0
         &__title
+            margin-left: auto
+            margin-right: auto
             font-size: 18px
             margin-bottom: 36px
             max-width: 250px
             line-height: 21px
         &-list
-            margin-left: 0
+            margin-left: 2px
             &__item
                 margin-bottom: 35px
+                justify-content: center
+                &:nth-child(2)
+                    margin-right: 46px
             &__icon
                 margin-right: 12px
             &__text
@@ -83,6 +100,22 @@
                     font-size: 16px
                 &-tel
                     line-height: 28px
+                    margin-right: 21px
             &__tel
                 font-size: 16px
                 margin-left: 0px
+@media (max-width: 576px)
+    .contacts
+        &__title
+            margin-right: 0
+            margin-left: 3px
+        &-list
+            &__item
+                justify-content: flex-start
+            &__text
+                &:first-child
+                    line-height: 28px
+                &-tel
+                    line-height: 27px
+                    & a
+                        margin-left: 3px

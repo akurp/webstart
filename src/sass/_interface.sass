@@ -4,13 +4,14 @@
     outline: none
 body
     font-family: 'Museo Sans Cyrl'
-    font-weight: 400
+    font-weight: 300
 img
     max-width: 100%
 h1, h2, h3, h4, p, ul, li, hr
     padding: 0
     margin: 0
-
+input:invalid
+    box-shadow: none
 .container
     width: 1170px
     margin: auto
@@ -23,6 +24,14 @@ h1, h2, h3, h4, p, ul, li, hr
     .container
         max-width: 580px
         width: 90%
+    .button
+        &:hover
+            background: $main-color
+        &-top
+            &_active
+                bottom: 50px
+                &:hover
+                    background: $main-color
 @media (max-width: 567px)
     .container
         max-width: 580px
@@ -91,3 +100,7 @@ h1, h2, h3, h4, p, ul, li, hr
     &__left, &__right
         &:hover
             cursor: pointer
+
+.error
+    display: block
+    
